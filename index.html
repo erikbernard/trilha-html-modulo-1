@@ -6,57 +6,414 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+<body style="padding: 0 1rem">
+   <h1 id="inicio">Introdução ao HTML na prática</h1>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+   <ul>
+     <li><a href="#ferramentas">Aula 1: Ferramentas Utilizadas</a></li>
+     <li><a href="#inspetor">Aula 2: Inspetor de Elementos</a></li>
+     <li><a href="#estrutura">Aula 3: Estrutura Básica do HTML</a></li>
+     <li><a href="#tags">Aula 4: Falando Sobre Tags</a></li>
+     <li><a href="#atributos">Aula 5: Atributos das Tags</a></li>
+     <li><a href="#textos">Aula 6: Textos</a></li>
+     <li><a href="#listas">Aula 7: Listas Ordenadas e Não Ordenadas</a></li>
+     <li><a href="#links">Aula 8: Links</a></li>
+     <li><a href="#referencias">Referências</a></li>
+   </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="ferramentas">Ferramentas Utilizadas</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <h3>Editor de código</h3>
+   <p>
+     No desenvolvimento de páginas Web, podemos utilizar qualquer editor de
+     textos simples, como o Bloco de Notas, Geddit, Sublime, Vim e etc. No
+     modulo HTML do curso faremos o iso do Visual Studio Code.
+   </p>
+   <h4>Visual Studio Code</h4>
+   <p>
+     Fazer download da ferramenta
+     <a href="https://code.visualstudio.com/" target="_blank">(Download)</a>
+   </p>
+   <h4>Instalação e Configuração para sistema operacional</h4>
+   <ul>
+     <li>
+       <a href="https://code.visualstudio.com/docs/?dv=win" target="_blank"
+         >Windows</a
+       >
+     </li>
+     <li>
+       <a href="https://code.visualstudio.com/#alt-downloads" target="_blank"
+         >Linux</a
+       >
+     </li>
+     <li>
+       <a href="https://code.visualstudio.com/#alt-downloads" target="_blank"
+         >Mac</a
+       >
+     </li>
+   </ul>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="inspetor">Inspetor de Elementos</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <p>
+     Outra ferramenta muito útil no desenvolvimento de páginas é o Inspetor de
+     Elementos, que é a ferramenta do desenvolvedor. Ela é utilizada no
+     navegador. No caso de exemplo, será usado o navegador do Google
+     <sup>c</sup>
+   </p>
+   <p>
+     Para abrir o Inspetor de elementos basta apertar F12 do seu teclado, ou
+     clicar no cantos superior direito do seu navegador, onde tem três
+     pontinhos, clicar em "Mais Ferramentas" e depois, clicar em "Ferramentas
+     do Desenvolvedor", outras forma e clicando botãp direeiton mouse e
+     escolher a opção de "Inspecionar" como na imagem abaixo.
+   </p>
+   <img
+     style="width: 25rem"
+     src="https://i.stack.imgur.com/wdcnW.gif"
+     alt="Inspetor de elementos"
+   />
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="estrutura">Estrutura Básica do HTML</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <p>
+     <img
+       style="width: 20rem"
+       src="https://pensandonaweb.com.br/content/images/2014/Aug/html-hierarchy.png"
+       alt="Estrutura Básica do HTML"
+     />
+   </p>
+   <h3>Páginas</h3>
+   <p>
+     Todo site é formado por uma estrutura HTML onde cada que são agrupadas por
+     páginas, os modelos de SPA contêm apenas uma únicas paginas(arquivo
+     index). E a primeira página é chamada de "Index"(índice). Note que isso
+     não é uma regra, mas é uma convenção da comunidade. Então o emso pode ser
+     alterado.
+   </p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h3>Dentro da Tag HTML</h3>
+   <h4>&lt;html&gt;</h4>
+   <p>
+     Todo documento HTML inicia como essa declaração
+     <code>&lt;!DOCTYPE html&gt;</code>. posteriomente e aberta a tag
+     <code>&lt;html&gt;</code>, onde irá contêm nossas demais estrututas.
+   </p>
+   <h4>&lt;head&gt;</h4>
+   <p>
+     A tag head faz parte da estrutura básica do documento, sua finalidade é
+     definir o cabeçalho do documento com informações que não serão exibidas
+     dentro do conteúdo da página.
+   </p>
+   <h4>&lt;title&gt;</h4>
+   <p>
+     Os títulos são muito importantes em SEO (Search Engine Optimization). Ou
+     seja, se quiser que seus sites sejam bem rankeados pelos resultados de
+     busca, você deve dar um título para todas as páginas de seu site.
+   </p>
+   <h4>&lt;meta&gt;</h4>
+   <p>
+     Define qualquer informação de metadados que não podem ser definidos por
+     outros elementos HTML. Meta tags são extremamente importantes do ponto de
+     vista de SEO, pois permitem que os mecanismos de pesquisa categorizem o
+     conteúdo do site corretamente.
+   </p>
+   <h4>&lt;body&gt;</h4>
+   <p>
+     Literalmete o corpo onde ira conter o que vai aparecer para o usuário. que
+     junto com a tag &lt;html&gt; e a &lt;head&gt; formam a tríade de tags mais
+     importantes e essenciais de qualquer site feito em HTML.
+   </p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+   <h2 id="tags">Falando Sobre Tags</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <p>
+     As tags são formadas por uma estrutura própria, iniciam com o sinal “menor
+     que”, em seguida vem o nome daquele elemento e por fim, o sinal “maior
+     que”. Podem ser dispostas em tags que precisam de fechamento e tags que
+     fecham sozinhas (self-closing) como <code>&lt;img&gt;, &lt;br&gt;</code>,
+     etc.
+   </p>
+   <p>
+     O fechamento de uma tag será definido com uma barra (/), sendo que no caso
+     das tags de auto fechamento, não há necessidade da presença desse
+     caractere.
+   </p>
+   <p>Existem muitas tags, e cada uma tem uma função.Por exemplo:</p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+   <h3>Tag &lt;i&gt;</h3>
+   <p>
+     A <code>&lt;i&gt;</code> define uma parte do texto em uma voz ou humor
+     alternativo. O conteúdo dentro é normalmente exibido em itálico .
+   </p>
+   <p>
+     A <code>&lt;i&gt;</code> é frequentemente usada para indicar um
+     <i>termo técnico</i>, uma frase de outro idioma, um pensamento, um nome de
+     navio, etc.
+   </p>
 
-</body>
+   <h3>Tag &lt;strong&gt;</h3>
+   <p>
+     A tag <code>&lt;strong&gt;</code> usada para definir o texto com forte
+     importância. O conteúdo dentro é normalmente exibido em
+     <strong>negrito</strong>.
+   </p>
+
+   <h2 id="atributos">Atributo das Tags</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <p>
+     Atributos são propriedades que uma tag pode ter. Existem atributos globais
+     e atributos específicos.
+   </p>
+
+   <h3>Atributos Globais</h3>
+   <p>
+     Atributos globais se aplicam a todos os elementos HTML, pois eles fornecem
+     informações adicionais que os navegadores usam para determinar a forma
+     como os elementos são exibidos na página.
+   </p>
+
+   <h4>Atributo id</h4>
+   <p>
+     O
+     <a
+       href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/id"
+       target="_blank"
+       >atributo global id</a
+     >
+     define um identificador exclusivo (ID) que deve ser único por todo o
+     documento. Seu objetivo é identificar o elemento ao navegar por âncoras
+     (usando um identificador de fragmento), quando utilizar scripts ou
+     estilizando (com CSS).
+   </p>
+
+   <h4>Atributo style</h4>
+   <p>
+     O
+     <a
+       href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style"
+       target="_blank"
+       >atributo global style</a
+     >
+     contém declarações de estilo CSS a serem aplicadas ao elemento. Observe
+     que é recomendado que os estilos sejam definidos em um arquivo ou arquivos
+     separados. Este atributo e o elemento têm principalmente a finalidade de
+     permitir um estilo rápido, diretamente no elemento, por exemplo, para fins
+     de teste.
+   </p>
+
+   <h4>Atributo Class</h4>
+   <p>
+     As
+     <a
+       href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class"
+       target="_blank"
+       >classes</a
+     >
+     permitem que CSS e JavaScript selecionem e acessem elementos específicos
+     por meio de seletores de classe ou funções como o método DOM
+     <code>.class document.getElementsByClassName</code>
+   </p>
+
+   <h3>Atributos específicos</h3>
+   <p>
+     São atributos que apenas uma ou algumas tags possuem acesso, são atributos
+     próprios delas. Exemplo:
+   </p>
+
+   <h4>Atributo type</h4>
+   <p>
+     É específico da tag <code>&lt;input&gt;</code>. Muda o tipo de campo que
+     será usado no input.
+   </p>
+   <h4>Atributo src</h4>
+   <p>
+     Específico da tag <code>&lt;img&gt;</code>. Define o endereço da imagem
+     que vai aparecer.
+   </p>
+
+   <h2 id="textos">Textos(Tipografia)</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <p>
+     Entender de tipografia <sup>*</sup> é de suma importância para o
+     desenvolvedor Web
+   </p>
+   <p>
+     Um dos principais objetivos do HTML é dar estrutura de texto e
+     significado, também conhecido como semântica), para que um navegador possa
+     exibi-lo corretamente.
+   </p>
+
+   <h3>Títulos</h3>
+   <p>
+     São as tags
+     <code
+       >&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt; e
+       &lt;h6&gt;</code
+     >.
+   </p>
+   <p>Existem níveis como título, subtítulo etc.</p>
+   <ul>
+     <li><h1>&lt;h1&gt;</h1></li>
+     <li><h2>&lt;h2&gt;</h2></li>
+     <li><h3>&lt;h3&gt;</h3></li>
+     <li><h4>&lt;h4&gt;</h4></li>
+     <li><h5>&lt;h5&gt;</h5></li>
+     <li><h6>&lt;h6&gt;</h6></li>
+   </ul>
+
+   <h4>Tag &lt;h1&gt;</h4>
+   <p>
+     É o título principal da página. Só deve ter uma tag
+     <code>&lt;h1&gt;</code> por página. O google penaliza sites que contém
+     mais de um <code>&lt;h1&gt;</code> por página.
+   </p>
+
+   <h3>Parágrafos</h3>
+   <p>
+     São definidos pela tag <code>&lt;p&gt;</code>. A cada novo parágrafo, se
+     coloca uma tag &lt;p&gt;
+   </p>
+
+   <h3>Citação</h3>
+   <p>
+     Para fazer uma citação,ou uma observação se usa a tag
+     <code>&lt;blockquote&gt;</code>. Exemplo:
+   </p>
+   <blockquote>
+     <i
+       >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+       harum aspernatur cumque debitis, nisi incidunt amet, temporibus commodi
+       in et molestias? Hic aut vero quae. Debitis laboriosam cupiditate
+       mollitia maxime.</i
+     >
+   </blockquote>
+   <p>
+     Note que foi dado um espaçamento, que também pode ser alterado via
+     <strong>CSS</strong>.
+   </p>
+
+   <h3>Margens</h3>
+   <p>
+     O navegador, por padrão, dá um espaçamento entre títulos e Parágrafos. Mas
+     isso pode ser alterado no <strong>CSS</strong>.
+   </p>
+   <p>
+     Você pode conferir essas margens usando a
+     <mark>Ferramenta do Desenvolvedor</mark> do seu navegador.
+   </p>
+   <p>
+     Para mais referências de tags do HTML, acesse o site da
+     <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+       >W3Shools.</a
+     >
+   </p>
+
+   <h2 id="listas">Listas Ordenadas e não Ordenadas</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <p>
+     Listas são muito usadas no desenvolvimento Web. As listas HTML permitem
+     que os desenvolvedores da Web agrupem um conjunto de itens relacionados em
+     listas. As principais do HTML SÃO:
+   </p>
+
+   <h3>Listas Ordenadas</h3>
+   <p>
+     Uma lista ordenada começa com a tag <code>&lt;ol&gt;</code> (ordered
+     list). Cada item da lista começa com a tag filha <sup>*</sup>
+     <code>&lt;li&gt;</code> (list item). Obs: a tag
+     <code>&lt;ol&gt;</code> não funciona se não colocar a tag
+     <code>&lt;li&gt;</code>.
+   </p>
+   <p>Os itens da lista serão marcados com números por padrão:</p>
+   <ol>
+     <li>Item 1</li>
+     <li>Item 2</li>
+     <li>Item 3</li>
+   </ol>
+
+   <p>Pode se colocar uma lista dentro da outra:</p>
+
+   <ol>
+     <li>
+       Item 1
+       <ol>
+         <li>item 1.1</li>
+         <li>item 1.2</li>
+         <li>item 1.3</li>
+       </ol>
+     </li>
+   </ol>
+
+   <h3>Listas Não Ordenadas</h3>
+   <p>
+     Uma lista não ordenada começa com a tag <code>&lt;ul&gt;</code> (unordered
+     list). Cada item da lista começa com a tag filha
+     <code>&lt;li&gt;</code> (list item). Obs: a tag
+     <code>&lt;ul&gt;</code> não funciona se não colocar a tag
+     <code>&lt;li&gt;</code>.
+   </p>
+   <p>
+     Os itens da lista serão marcados com marcadores (pequenos círculos pretos)
+     por padrão:
+   </p>
+
+   <ul>
+     <li>Item 1</li>
+     <li>Item 2</li>
+     <li>Item 3</li>
+   </ul>
+
+   <blockquote>
+     obs: As listas podem ser usadas para fazer um sumário, mas via CSS pode se
+     usar para menus.
+   </blockquote>
+
+   <h2 id="links">Links</h2>
+   <small><a href="#inicio">(voltar)</a></small>
+   <p>
+     Em todo site, você clica em um link <sup>*</sup>, e vai para outra página.
+     Isso é o que chamamos de "navegar na internet".
+   </p>
+   <p>
+     No HTML, a navegação é feita através da tag
+     <code>&lt;a&gt;</code>(âncora)<sup>*</sup>.
+   </p>
+   <p>
+     A tag <code>&lt;a&gt;</code> tem que vir com o atributo
+     <mark><code>href</code></mark
+     >, que indica o destino do link.Exemplo:
+   </p>
+   <blockquote>
+     <code>&lt;a href="https://www.dio.me/"&gt;site da dio&lt;/a&gt;</code>
+   </blockquote>
+   <p>
+     Para abrir em uma nova aba, se coloca o atributo
+     <code>target="_blank"</code>. Ex:
+   </p>
+   <blockquote>
+     <code
+       >&lt;a href="https://www.dio.me/" target="_blank"&gt;site da
+       dio&lt;/a&gt;</code
+     >
+   </blockquote>
+   <p>
+     Uma forma alternativa para abrir links em uma nova aba é utilizar as
+     teclas de atalho CTRL+click.
+   </p>
+
+   <h2>Referências</h2>
+   <a href="https://www.w3schools.com/html/default.asp" target="_blank"
+     >HTML - W3 Schools</a
+   ><br />
+   <a
+     href="https://developer.mozilla.org/en-US/docs/Learn/HTML"
+     target="_blank"
+     >MDN Web Docs</a
+   ><br />
+   <a href="https://www.dio.me/" target="_blank">Dio.me</a><br />
+   <a href="https://www.edx.org/course/html5-and-css-fundamentals"
+     >HTML Fundamentals - W3C</a
+   >
+ </body>
 </html>

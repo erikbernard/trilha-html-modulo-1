@@ -1,5 +1,13 @@
 # Trilha HTML - Dio.me
 ## Módulo 01 - Primeiros passos com HTML
+## 📋 Deploy
+- [Pagina Online](https://bootstrap-5-tmichv--9000.local.webcontainer.io)
+
+## ✨ Technology
+- HTML
+
+
+## 💻 About the project
 
 A ideia deste desafio é elaborar um website, utilizando uma estrutura bem básica, utilizando tags aprendidas durante as aulas práticas até então. 
 
