@@ -1,7 +1,7 @@
 # Trilha HTML - Dio.me
 ## Módulo 01 - Primeiros passos com HTML
 ## 📋 Deploy
-- [Pagina Online](https://bootstrap-5-tmichv--9000.local.webcontainer.io)
+- [Pagina Online](https://stackblitz.com/edit/bootstrap-5-tmichv?embed=1&file=readme.md&hideExplorer=1&hideNavigation=1&view=preview)
 
 ## ✨ Technology
 - HTML
